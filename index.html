@@ -1,0 +1,438 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>RobertS Store</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">RobertS Store</a>
+            </div>
+            <div class="collapse navbar-collapse" id="header">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <ul class="nav navbar-nav navbar-left">
+                            <form class="navbar-form navbar-left" role="search">
+                                <div class="form-group">
+                                    <select class="form-control" name="categories">
+                                        <option value="">All categories</option>
+                                        <option value="">Laptops, Tablets & Phones</option>
+                                        <option value="">TV, Audio, Photo</option>
+                                        <option value="">Appliances</option>
+                                        <option value="">Gaming</option>
+                                        <option value="">Smart Tech</option>
+                                    </select>
+                                    <div class="input-group">
+                                        <div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Search...">
+                                            </div>
+                                        </div>
+                                        <span class="input-group-btn">
+                                            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" /></button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 pull-right">
+                        <ul class="nav navbar-nav navbar-right ">
+                            <form class="navbar-form navbar-right">
+                                <div class="form-group">
+                                    <div class="btn-group">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Robert S <span class="caret"></span></button>
+                                        <ul class="dropdown-menu" aria-labelledby="user"></ul>
+                                    </div>
+                                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span> <span class="badge">3</span> items</button>
+                                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-off"></span></button>
+                                </div>
+                            </form>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="nav nav-justified">
+                        <li class="col-md-3"><a href="#">Laptops, Tablets & Phones</a></li>
+                        <li class="dropdown col-md-2">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TV, Audio, Photo <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">TVs & Accessories</a></li>
+                                <li><a href="#">Audio Hi-Fi</a></li>
+                                <li><a href="#">Home Cinema</a></li>
+                                <li><a href="#">Photo Cameras & Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-md-2"><a href="#">Appliances</a></li>
+                        <li class="col-md-2"><a href="#">Gaming</a></li>
+                        <li class="col-md-2"><a href="#">Smart Tech</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container" id="main-container">
+        <div class="row">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">User</a></li>
+                <li class="active">Profile</li>
+            </ol>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2" id="sidebar">
+                <ul class="nav nav-pills nav-stacked" role="tablist">
+                    <li class="active" role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                    <li class="disabled" role="presentation"><a href="#">Adress Book</a></li>
+                    <li role="presentation"><a href="#orders" aria-controls="orders" role="tab" data-toggle="tab">Orders</a></li>
+                    <li role="presentation"><a href="#notifications" aria-controls="notifications" role="tab" data-toggle="tab">Notifications</a></li>
+                    <li class="disabled" role="presentation"><a href="#">Gift Cards</a></li>
+                    <li class="disabled" role="presentation"><a href="#">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="col-md-10" id="content">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="profile">
+                        <div class="row">
+                            <div class="alert alert-warning">Change account settings, personal informations, email or password.</div>
+                        </div>
+                        <div class="row">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="#myinfo" aria-controls="myinfo" role="tab" data-toggle="tab">My Information</a></li>
+                                <li role="presentation"><a href="#password" aria-controls="password" role="tab" data-toggle="tab">Password</a></li>
+                                <li role="presentation"><a href="#email" aria-controls="email" role="tab" data-toggle="tab">Email</a></li>
+                            </ul>
+                            <div class="tab-content col-md-6">
+                                <div role="tabpanel" class="tab-pane active" id="myinfo">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                <label for="firstname">First name <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" id="firstname" placeholder="">
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <label for="lastname">Last name <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" id="lastname" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 form-group">
+                                                <label for="address">Address <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" id="address" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 form-group">
+                                                <label for="address2">Address line 2 (optional)</label>
+                                                <input type="text" class="form-control" id="address2" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                <label for="city">City <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" id="city" placeholder="">
+                                            </div>
+                                            <div class="col-md-3 form-group">
+                                                <label for="state">State <span class="text-danger">*</span></label>
+                                                <select class="form-control" id="state" placeholder=""></select>
+                                            </div>
+                                            <div class="col-md-3 form-group">
+                                                <label for="zipcode">Zip code</label>
+                                                <input type="text" class="form-control" id="zipcode" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                <label for="country">Country <span class="text-danger">*</span></label><span><a class="pull-right" href="#">Customs notice</a></span>
+                                                <input type="text" class="form-control" id="country" placeholder="">
+                                            </div>
+                                        </div>
+                                        <p class="text-muted">Please enter your billing phone number on file with your credit card company.</p>
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                <label for="phone">Phone <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" id="phone" placeholder="">
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <label for="phone2">Other phone</label>
+                                                <input type="text" class="form-control " id="phone2" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-2 col-md-offset-7">
+                                                <button type="button" class="btn btn-link">Cancel</button>
+
+                                            </div>
+                                            <div class="col-md-3">
+                                                <button type="submit" class="btn btn-default btn-block">Save</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="password">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-12 form-group">
+                                                <label for="currentpass">Current password <span class="text-danger">*</span></label>
+                                                <input type="password" class="form-control" id="currentpass" placeholder="">
+                                            </div>
+                                        </div>
+                                        <hr class="divider">
+                                        <div class="row">
+                                            <div class="col-md-12 form-group">
+                                                <label for="newpass">New password <span class="text-danger">*</span></label><a class="pull-right" href="#">Help</a></span>
+                                                <input type="password" class="form-control" id="newpass" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 form-group">
+                                                <label for="repeatpass">Repeat password <span class="text-danger">*</span></label>
+                                                <input type="password" class="form-control" id="repeatpass" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-2 col-md-offset-5">
+                                                <button type="button" class="btn btn-link">Cancel</button>
+
+                                            </div>
+                                            <div class="col-md-5">
+                                                <button type="submit" class="btn btn-default btn-block">Change password</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="email">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-12 form-group">
+                                                <label for="currentemail">Current email address <span class="text-danger">*</span></label>
+                                                <input type="email" class="form-control" id="currentemail" placeholder="">
+                                            </div>
+                                        </div>
+                                        <hr class="divider">
+                                        <div class="row">
+                                            <div class="col-md-12 form-group">
+                                                <label for="repeatemail">Repeat email address <span class="text-danger">*</span></label>
+                                                <input type="email" class="form-control" id="repeatemail" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-2 col-md-offset-7">
+                                                <button type="button" class="btn btn-link">Cancel</button>
+
+                                            </div>
+                                            <div class="col-md-3">
+                                                <button type="submit" class="btn btn-default btn-block">Apply</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="orders">
+                        <h3>My Orders</h3>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover text-center">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="text-center">Order no.</div>
+                                        </th>
+                                        <th>
+                                            <div class="text-center">Date <span class="caret"></span> <span class="glyphicon glyphicon-filter pull-right"></span></div>
+                                        </th>
+                                        <th>
+                                            <div class="text-center">Items</div>
+                                        </th>
+                                        <th>
+                                            <div class="text-center">Subtotal (EUR)</div>
+                                        </th>
+                                        <th>
+                                            <div class="text-center">Total (EUR)</div>
+                                        </th>
+                                        <th>
+                                            <div class="text-center">Status</div>
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2002834271</td>
+                                        <td>04.08.2016</td>
+                                        <td>4</td>
+                                        <td>429.00</td>
+                                        <td>429.00</td>
+                                        <td>Canceled</td>
+                                        <td><a href="#">See details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2002834270</td>
+                                        <td>03.06.2016</td>
+                                        <td>2</td>
+                                        <td>134.00</td>
+                                        <td>134.00</td>
+                                        <td>Delivered</td>
+                                        <td><a href="#">See details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2002834269</td>
+                                        <td>15.05.2016</td>
+                                        <td>4</td>
+                                        <td>192.00</td>
+                                        <td>192.00</td>
+                                        <td>Canceled</td>
+                                        <td><a href="#">See details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2002834268</td>
+                                        <td>21.04.2016</td>
+                                        <td>2</td>
+                                        <td>75.00</td>
+                                        <td>75.00</td>
+                                        <td>Delivered</td>
+                                        <td><a href="#">See details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-center">
+                            <ul class="pagination">
+                                <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li class="disabled"><a href="#">...</a></li>
+                                <li><a href="#">9</a></li>
+                                <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="notifications">
+                        <h3>Notifications</h3>
+                        <p>We’ll always let you know about important changes, but you pick what else you want to hear about.</p>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Notification Settings</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <p class="col-sm-12">Receive Notifications to your iPhone, iPad or Android device.</p>
+                                </div>
+                                <div class="row">
+                                    <form class="col-sm-12">
+                                        <label class="checkbox-inline col-sm-2"><input type="checkbox" value="messages" checked>Messages</label>
+                                        <label class="checkbox-inline col-sm-2"><input type="checkbox" value="updates">Updates</label>
+                                        <label class="checkbox-inline col-sm-2"><input type="checkbox" value="accountActivity">Account Activity</label>
+                                        <label class="checkbox-inline col-sm-2"><input type="checkbox" value="recommendations">Recommendations</label>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Email Settings</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <p>I want to recieve:</p>
+                                        <small class="text-muted">You can disable these at any time.</small>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <form>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="general" checked> General promotions, updates, news or general promotions for partner campaigns and services, user surveys</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="review"> Review reminders</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
+</body>
+
+</html>
